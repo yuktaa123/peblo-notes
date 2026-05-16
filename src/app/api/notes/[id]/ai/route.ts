@@ -58,7 +58,19 @@ export async function POST(
     try {
       insights = await generateNoteInsights(note.content)
     } catch (e) {
-      console.error('[AIGeneration]', e)
+      const err = e as Error & {
+        status?: number
+        statusText?: string
+        errorDetails?: unknown
+      }
+      console.error('[AIGeneration]', {
+        message: err.message,
+        name: err.name,
+        status: err.status,
+        statusText: err.statusText,
+        errorDetails: err.errorDetails,
+        stack: err.stack,
+      })
       return NextResponse.json(
         { error: 'AI generation failed, please try again' },
         { status: 502 }
