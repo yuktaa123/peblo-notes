@@ -77,10 +77,11 @@ export async function POST(
       .eq('id', id)
     if (updateError) throw updateError
 
+    // Non-fatal: insights already succeeded, so a failed usage log shouldn't 502 the caller.
     const { error: usageError } = await supabase
       .from('ai_usage')
       .insert({ user_id: user.id, note_id: id, operation: 'all' })
-    if (usageError) throw usageError
+    if (usageError) console.error('[AIUsageInsert]', usageError)
 
     return NextResponse.json({ ...insights, cached: false })
   } catch (error) {
