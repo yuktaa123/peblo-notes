@@ -5,7 +5,7 @@ import type { Database } from '@/types/supabase'
 const PROTECTED_PREFIXES = ['/notes', '/dashboard']
 const AUTH_PREFIXES = ['/login', '/signup']
 
-export async function middleware(request: NextRequest) {
+export async function proxy(request: NextRequest) {
   let response = NextResponse.next({ request })
 
   const supabase = createServerClient<Database>(
