@@ -1,0 +1,55 @@
+{
+  "examples": [
+    {
+      "type": "meeting_note",
+      "input": {
+        "title": "Sprint planning notes",
+        "content": "Discussed Q3 roadmap. Need to ship the auth refactor by Friday. Mike will draft the API design doc. Schedule a follow-up with the design team next Tuesday."
+      },
+      "output": {
+        "summary": "The team reviewed the Q3 roadmap and established deadlines for the upcoming authentication refactor. Key tasks include finalizing the API design documentation and coordinating with the design team for a follow-up session next week.",
+        "action_items": [
+          "Ship the auth refactor by Friday",
+          "Mike to draft the API design doc",
+          "Schedule a follow-up with design team next Tuesday"
+        ],
+        "suggested_title": "Q3 Roadmap and Auth Refactor Planning"
+      }
+    },
+    {
+      "type": "learning_note",
+      "input": {
+        "title": "Learning React Server Components",
+        "content": "## Key concepts\n\n- Server vs Client components\n- When to use `\"use client\"`\n- Data fetching patterns\n\n**TODO:** Build a demo project. Read Vercel's RSC docs. Watch Theo's video."
+      },
+      "output": {
+        "summary": "Notes on learning React Server Components, covering the distinction between server and client components, usage of the 'use client' directive, and data fetching patterns. Includes a list of follow-up learning tasks.",
+        "action_items": [
+          "Build a demo project",
+          "Read Vercel's RSC docs",
+          "Watch Theo's video"
+        ],
+        "suggested_title": "React Server Components Study Notes"
+      }
+    },
+    {
+      "type": "project_plan",
+      "input": {
+        "title": "Launch checklist - portfolio v2",
+        "content": "Need to finalize the portfolio redesign before applying to internships. Tasks: migrate from Framer to Next.js, write 3 case studies, set up analytics, optimize images, get feedback from 2 designers, ship by end of week."
+      },
+      "output": {
+        "summary": "A pre-launch checklist for the portfolio v2 redesign, targeting completion before internship applications. Covers technical migration, content creation, performance optimization, and a peer review step.",
+        "action_items": [
+          "Migrate from Framer to Next.js",
+          "Write 3 case studies",
+          "Set up analytics",
+          "Optimize images",
+          "Get feedback from 2 designers",
+          "Ship by end of week"
+        ],
+        "suggested_title": "Portfolio v2 Pre-Launch Checklist"
+      }
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "GET /api/notes": {
+    "notes": [
+      {
+        "id": "342bd761-7690-4d2f-90d5-560ca268a14e",
+        "user_id": "<user-uuid>",
+        "title": "Sprint planning notes",
+        "content": "Discussed Q3 roadmap. Need to ship the auth refactor by Friday. Mike will draft the API design doc. Schedule a follow-up with the design team next Tuesday.",
+        "tags": ["work"],
+        "category": "Project",
+        "is_archived": false,
+        "is_public": false,
+        "share_id": null,
+        "ai_summary": "The team reviewed the Q3 roadmap and established deadlines for the upcoming authentication refactor. Key tasks include finalizing the API design documentation and coordinating with the design team for a follow-up session next week.",
+        "ai_action_items": [
+          "Ship the auth refactor by Friday",
+          "Mike to draft the API design doc",
+          "Schedule a follow-up with design team next Tuesday"
+        ],
+        "ai_suggested_title": "Q3 Roadmap and Auth Refactor Planning",
+        "ai_last_generated_at": "2026-05-16T12:15:00.000Z",
+        "created_at": "2026-05-16T11:50:00.000Z",
+        "updated_at": "2026-05-16T12:14:00.000Z"
+      }
+    ]
+  },
+  "POST /api/notes/:id/ai": {
+    "summary": "The team reviewed the Q3 roadmap and established deadlines for the upcoming authentication refactor. Key tasks include finalizing the API design documentation and coordinating with the design team for a follow-up session next week.",
+    "action_items": [
+      "Ship the auth refactor by Friday",
+      "Mike to draft the API design doc",
+      "Schedule a follow-up with design team next Tuesday"
+    ],
+    "suggested_title": "Q3 Roadmap and Auth Refactor Planning",
+    "cached": false
+  },
+  "POST /api/notes/:id/share": {
+    "share_id": "R1Jvey4QrAAI",
+    "share_url": "https://peblo-notes.vercel.app/shared/R1Jvey4QrAAI"
+  },
+  "GET /api/shared/:shareId": {
+    "title": "Learning React Server Components",
+    "content": "## Key concepts\n\n- Server vs Client components\n- When to use `\"use client\"`\n- Data fetching patterns\n\n**TODO:** Build a demo project. Read Vercel's RSC docs. Watch Theo's video.",
+    "tags": ["react", "learning"],
+    "updated_at": "2026-05-16T12:25:00.000Z"
+  },
+  "GET /api/insights": {
+    "total_notes": 2,
+    "notes_edited_this_week": 2,
+    "ai_usage_count": 2,
+    "top_tags": [
+      { "tag": "learning", "count": 1 },
+      { "tag": "work", "count": 1 },
+      { "tag": "react", "count": 1 }
+    ],
+    "weekly_activity": [
+      { "date": "2026-05-10", "count": 0 },
+      { "date": "2026-05-11", "count": 0 },
+      { "date": "2026-05-12", "count": 0 },
+      { "date": "2026-05-13", "count": 0 },
+      { "date": "2026-05-14", "count": 0 },
+      { "date": "2026-05-15", "count": 0 },
+      { "date": "2026-05-16", "count": 2 }
+    ]
+  }
+}
