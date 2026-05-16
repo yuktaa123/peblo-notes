@@ -2,7 +2,7 @@
 
 AI-powered collaborative notes workspace built for the Peblo Full Stack Developer Challenge.
 
-**Live demo:** _add Vercel URL after deploy_
+**Live demo:** [peblo-notes-woad-omega.vercel.app](https://peblo-notes-woad-omega.vercel.app)
 **Demo video:** _add YouTube unlisted link after recording_
 
 ## Screenshots
